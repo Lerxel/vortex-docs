@@ -30,6 +30,7 @@ Methods of a `Humanoid`.
 <br><br>
 
 * [IsDead](#isdead): `Boolean`
+* [GetState] (#getstate): `Enum.HumanoidStateType`
 
 </details>
 
@@ -40,6 +41,10 @@ Signals of a `Humanoid`.
 
 * [Died](#died): [`Signal`](/content/reference/datatypes/signal.md)
 * [HealthChanged](#healthchanged): [`Signal`](/content/reference/datatypes/signal.md)
+* [StateChanged](#statechanged): [`Signal`](/content/reference/datatypes/signal.md)
+* [Jumping](#jumping): [`Signal`](/content/reference/datatypes/signal.md)
+* [FreeFalling](#freefalling): [`Signal`](/content/reference/datatypes/signal.md)
+* [Running](#running): [`Signal`](/content/reference/datatypes/signal.md)
 
 </details>
 
@@ -87,6 +92,14 @@ Signals of a `Humanoid`.
 >
 > Returns whether the Humanoid is dead.
 
+### GetState
+
+> `Enum.HumanoidStateType``
+>
+> `humanoid:IsDead()`
+>
+> Returns the Humanoid's current state.
+
 ## Signals
 
 ### Died
@@ -105,7 +118,39 @@ Signals of a `Humanoid`.
 >
 > `humanoid.HealthChanged`
 >
-> Signals that the Humanoid health changed.
+> Signals when the Humanoid health changes.
+
+### StateChanged
+
+> [`Signal`](/content/reference/datatypes/signal.md)
+>
+> `humanoid.StateChanged`
+>
+> Signals when the Humanoid state changes.
+
+### Jumping
+
+> [`Signal`](/content/reference/datatypes/signal.md)
+>
+> `humanoid.Jumping`
+>
+> Signals when the Humanoid is jumping.
+
+### FreeFalling
+
+> [`Signal`](/content/reference/datatypes/signal.md)
+>
+> `humanoid.FreeFalling`
+>
+> Signals when the Humanoid enters or leaves the freefall state.
+
+### Running
+
+> [`Signal`](/content/reference/datatypes/signal.md)
+>
+> `humanoid.Running`
+>
+> Signals when the Humanoid enters or leaves the running state.
 
 #### Parameters
 
