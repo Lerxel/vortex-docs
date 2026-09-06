@@ -28,6 +28,8 @@ local player = Players.LocalPlayer
 ## Methods
 
 - `GetPlayers(): { Player }` - returns the currently visible player list.
+* `GetPlayerByUserId(UserId: number): Player` - Returns the player with the specified UserId.
+* `GetPlayerFromCharacter(character: Character): Player` - Returns the player associated with the specified character.
 
 ## Signals
 
