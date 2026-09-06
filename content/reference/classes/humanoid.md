@@ -96,7 +96,7 @@ Signals of a `Humanoid`.
 
 > `Enum.HumanoidStateType``
 >
-> `humanoid:IsDead()`
+> `humanoid:GetState()`
 >
 > Returns the Humanoid's current state.
 
