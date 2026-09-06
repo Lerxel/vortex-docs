@@ -29,6 +29,11 @@ local player = Players.LocalPlayer
 
 - `GetPlayers(): { Player }` - returns the currently visible player list.
 
+## Signals
+
+* `PlayerAdded(): Signal` - signals when a player joins the server.
+* `PlayerRemoving(): Signal` - signals when a player leaves the server.
+
 `GetChildren` is not exposed by the current Vortex Players service.
 
 ## Vortex Studio 0.3.4 notes
