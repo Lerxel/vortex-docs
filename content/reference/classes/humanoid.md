@@ -39,12 +39,12 @@ Methods of a `Humanoid`.
 Signals of a `Humanoid`.
 <br><br>
 
-* [Died](#died): [`Signal`](/content/reference/datatypes/signal.md)
-* [HealthChanged](#healthchanged): [`Signal`](/content/reference/datatypes/signal.md)
-* [StateChanged](#statechanged): [`Signal`](/content/reference/datatypes/signal.md)
-* [Jumping](#jumping): [`Signal`](/content/reference/datatypes/signal.md)
-* [FreeFalling](#freefalling): [`Signal`](/content/reference/datatypes/signal.md)
-* [Running](#running): [`Signal`](/content/reference/datatypes/signal.md)
+* [Died](#died): [`Signal`](../datatypes/signal.md)
+* [HealthChanged](#healthchanged): [`Signal`](../datatypes/signal.md)
+* [StateChanged](#statechanged): [`Signal`](../datatypes/signal.md)
+* [Jumping](#jumping): [`Signal`](../datatypes/signal.md)
+* [FreeFalling](#freefalling): [`Signal`](../datatypes/signal.md)
+* [Running](#running): [`Signal`](../datatypes/signal.md)
 
 </details>
 
@@ -104,7 +104,7 @@ Signals of a `Humanoid`.
 
 ### Died
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.Died`
 >
@@ -114,7 +114,7 @@ Signals of a `Humanoid`.
 
 ### HealthChanged
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.HealthChanged`
 >
@@ -122,7 +122,7 @@ Signals of a `Humanoid`.
 
 ### StateChanged
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.StateChanged`
 >
@@ -130,7 +130,7 @@ Signals of a `Humanoid`.
 
 ### Jumping
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.Jumping`
 >
@@ -138,7 +138,7 @@ Signals of a `Humanoid`.
 
 ### FreeFalling
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.FreeFalling`
 >
@@ -146,7 +146,7 @@ Signals of a `Humanoid`.
 
 ### Running
 
-> [`Signal`](/content/reference/datatypes/signal.md)
+> [`Signal`](../datatypes/signal.md)
 >
 > `humanoid.Running`
 >
