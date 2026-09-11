@@ -25,13 +25,13 @@ Written by Arbuzyonak on August 30th, 2026
 
 > [`Instance`](/content/reference/classes/instance.md)
 >
-> `Instance.new(className: String, parent: Instance?)`
+> `Instance.new(className: string, parent: Instance?)`
 >
 > Creates a new `Instance` of the class supplied by `className`.
 
 #### Parameters
 
-- `className`: `String` — the class to create.
+- `className`: `string` — the class to create.
 - `parent`: `Instance?` — optional initial parent for the new instance.
 
 <br/>

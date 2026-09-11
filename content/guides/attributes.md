@@ -10,7 +10,7 @@ ___________________
 ### SetAttribute
 Creates, updates, or removes an attribute value.
 ```
-Instance:SetAttribute(Attribute: String, Value: Variant)
+Instance:SetAttribute(Attribute: string, Value: Variant)
 ```
 #### Parameters
 
@@ -39,7 +39,7 @@ ___________________
 ### GetAttribute
 
 ```
-Instance:GetAttribute(Attribute: String): Variant
+Instance:GetAttribute(Attribute: string): Variant
 ```
 #### Parameters
 
@@ -73,7 +73,7 @@ Instance:GetAttributeChangedSignal(Attribute: string)
 
 #### Parameters
 ```
-Attribute: String
+Attribute: string
 The name of the specified attribute for which the change signal is being returned. 
 ```
 #### Returns

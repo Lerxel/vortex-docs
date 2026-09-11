@@ -33,7 +33,7 @@ Properties of `game`.
 Methods of `game`.
 <br><br>
 
-* [GetService(serviceName: `String`)](#getservice): `Instance`
+* [GetService(serviceName: `string`)](#getservice): `Instance`
 
 </details>
 
@@ -89,13 +89,13 @@ Services of `game`.
 
 > `Instance`
 >
-> `game:GetService(serviceName: String)`
+> `game:GetService(serviceName: string)`
 >
 > Returns the service with the specified name.
 
 #### Parameters
 
-- `serviceName`: `String` — the name of the service to retrieve.
+- `serviceName`: `string` — the name of the service to retrieve.
 
 <br/>
 

@@ -32,7 +32,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 
 - [Anchored](#anchored): `Boolean`
 - [CanCollide](#cancollide): `Boolean`
-- [ClassName](#classname): `String`
+- [ClassName](#classname): `string`
 - [Parent](#parent): [`Instance`](/content/reference/classes/instance.md) | `nil`
 - [Truss](#truss): `Boolean`
 
@@ -42,7 +42,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 <summary><b>Transform</b></summary>
 
 - [CFrame](#cframe): [`CFrame`](../datatypes/cframe.md)
-- [Name](#name): `String`
+- [Name](#name): `string`
 - [Position](#position): [`Vector3`](../datatypes/vector3.md)
 - [Rotation](#rotation): [`Vector3`](../datatypes/vector3.md)
 - [Size](#size): [`Vector3`](../datatypes/vector3.md)
@@ -63,7 +63,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 - [FindFirstChildOfClass](#findfirstchildofclass): [`Instance`](/content/reference/classes/instance.md) | `nil`
 - [GetAttribute](#getattribute): `Variant` | `nil`
 - [GetAttributeChangedSignal](#getattributechangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
-- [GetAttributes](#getattributes): `{ [String]: Variant }`
+- [GetAttributes](#getattributes): `{ [string]: Variant }`
 - [GetChildren](#getchildren): `{ Instance }`
 - [GetDescendants](#getdescendants): `{ Instance }`
 - [GetPropertyChangedSignal](#getpropertychangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
@@ -112,7 +112,7 @@ Sets the position and rotation of the `part` as a single transform.
 
 
 ### ClassName
-> `String` \
+> `string` \
 \
 The runtime class name of the `part`.
 
@@ -147,7 +147,7 @@ Currently this has no effect other than visual.
 
 
 ### Name
-> `String` \
+> `string` \
 \
 The name of the `part`, and its label in the explorer.
 
@@ -231,7 +231,7 @@ Destroys the `part`.
 ### FindFirstChild()
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-`part:FindFirstChild(name: String)` \
+`part:FindFirstChild(name: string)` \
 \
 Returns the first direct child with the supplied `name`, or `nil` when none is
 found.
@@ -242,7 +242,7 @@ found.
 ### FindFirstChildOfClass()
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-`part:FindFirstChildOfClass(className: String)` \
+`part:FindFirstChildOfClass(className: string)` \
 \
 Returns the first direct child whose class matches `className`, or `nil` when
 none is found.
@@ -253,7 +253,7 @@ none is found.
 ### GetAttribute()
 > `Variant` | `nil` \
 \
-`part:GetAttribute(name: String)` \
+`part:GetAttribute(name: string)` \
 \
 Returns the value stored under the supplied attribute `name`.
 
@@ -263,7 +263,7 @@ Returns the value stored under the supplied attribute `name`.
 ### GetAttributeChangedSignal()
 > [`Signal`](/content/reference/datatypes/signal.md) \
 \
-`part:GetAttributeChangedSignal(name: String)` \
+`part:GetAttributeChangedSignal(name: string)` \
 \
 Returns an event associated with changes to the supplied attribute `name`.
 
@@ -271,7 +271,7 @@ Returns an event associated with changes to the supplied attribute `name`.
 
 
 ### GetAttributes()
-> `{ [String]: Variant }` \
+> `{ [string]: Variant }` \
 \
 Returns a table containing the `part` attributes.
 
@@ -297,7 +297,7 @@ Returns the descendants of the `part`.
 ### GetPropertyChangedSignal()
 > [`Signal`](/content/reference/datatypes/signal.md) \
 \
-`part:GetPropertyChangedSignal(property: String)` \
+`part:GetPropertyChangedSignal(property: string)` \
 \
 Returns an event associated with changes to the supplied property.
 
@@ -307,7 +307,7 @@ Returns an event associated with changes to the supplied property.
 ### IsA()
 > `Boolean` \
 \
-`part:IsA(className: String)` \
+`part:IsA(className: string)` \
 \
 Returns whether the `part` is an instance of `className` or one of its
 ancestor classes.
@@ -318,7 +318,7 @@ ancestor classes.
 ### SetAttribute()
 > `nil` \
 \
-`part:SetAttribute(name: String, value: Variant | nil)` \
+`part:SetAttribute(name: string, value: Variant | nil)` \
 \
 Sets the attribute `name` to `value`. Passing `nil` clears the attribute.
 
@@ -328,7 +328,7 @@ Sets the attribute `name` to `value`. Passing `nil` clears the attribute.
 ### WaitForChild()
 > [`Instance`](/content/reference/classes/instance.md) \
 \
-`part:WaitForChild(name: String)` \
+`part:WaitForChild(name: string)` \
 \
 Waits for and returns a direct child with the supplied `name`.
 

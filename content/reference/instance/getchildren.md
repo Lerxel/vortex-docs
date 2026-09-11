@@ -2,7 +2,7 @@
 
 > `Array`
 >
-> Returns an array containing all direct children of the instance.
+> Returns an array containing all direct children of the nstance.
 >
 > ```lua
 > local children = workspace:GetChildren()

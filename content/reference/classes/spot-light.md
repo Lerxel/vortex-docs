@@ -49,7 +49,7 @@ Properties of a SpotLight, in the order they appear on Vortex Studio.
 <details>
 <summary><b>Transform</b></summary>
 
-- [Name](#name): `String`
+- [Name](#name): `string`
 
 </details>
 
@@ -91,7 +91,7 @@ Controls which face of the parent [`part`](./part.md) that the light is emitted 
 
 
 ### Name
-> `String` \
+> `string` \
 \
 The name of the `spotlight`, and its label in the explorer.
 
