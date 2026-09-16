@@ -32,7 +32,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 
 - [Anchored](#anchored): `Boolean`
 - [CanCollide](#cancollide): `Boolean`
-- [ClassName](#classname): `String`
+- [ClassName](#classname): `string`
 - [Parent](#parent): [`Instance`](/content/reference/classes/instance.md) | `nil`
 - [Truss](#truss): `Boolean`
 
@@ -42,7 +42,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 <summary><b>Transform</b></summary>
 
 - [CFrame](#cframe): [`CFrame`](../datatypes/cframe.md)
-- [Name](#name): `String`
+- [Name](#name): `string`
 - [Position](#position): [`Vector3`](../datatypes/vector3.md)
 - [Rotation](#rotation): [`Vector3`](../datatypes/vector3.md)
 - [Size](#size): [`Vector3`](../datatypes/vector3.md)
@@ -63,7 +63,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 - [FindFirstChildOfClass](#findfirstchildofclass): [`Instance`](/content/reference/classes/instance.md) | `nil`
 - [GetAttribute](#getattribute): `Variant` | `nil`
 - [GetAttributeChangedSignal](#getattributechangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
-- [GetAttributes](#getattributes): `{ [String]: Variant }`
+- [GetAttributes](#getattributes): `{ [string]: Variant }`
 - [GetChildren](#getchildren): `{ Instance }`
 - [GetDescendants](#getdescendants): `{ Instance }`
 - [GetPropertyChangedSignal](#getpropertychangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
@@ -96,9 +96,9 @@ When `false`, the part will experience gravity and forces from other parts.
 ### CanCollide
 > `Boolean` \
 \
-Determines whether the `part` is given physics collisions, or whether it can phase through other parts. \
+Determines whether the `Part` is given physics collisions, or whether it can phase through other parts. \
 \
-**Note:** A `part` cannot be unanchored while collision is disabled.
+**Note:** A `Part` cannot be unanchored while collision is disabled.
 
 <br/>
 
@@ -106,15 +106,15 @@ Determines whether the `part` is given physics collisions, or whether it can pha
 ### CFrame
 > [`CFrame`](/content/reference/datatypes/cframe.md) \
 \
-Sets the position and rotation of the `part` as a single transform.
+Sets the position and rotation of the `Part` as a single transform.
 
 <br/>
 
 
 ### ClassName
-> `String` \
+> `string` \
 \
-The runtime class name of the `part`.
+The runtime class name of the `Part`.
 
 <br/>
 
@@ -122,7 +122,7 @@ The runtime class name of the `part`.
 ### Cast Shadow
 > `Boolean` \
 \
-Controls whether or not the `part` will cast a shadow.
+Controls whether or not the `Part` will cast a shadow.
 This can be used to save performance with part's whose shadows cannot be seen, or for glass parts which realistically would not create a shadow.
 
 <br/>
@@ -131,7 +131,7 @@ This can be used to save performance with part's whose shadows cannot be seen, o
 ### Color
 > [`Color3`](../datatypes/color3.md) \
 \
-Determines the visible color of the `part`.
+Determines the visible color of the `Part`.
 Will also affect the part's [`Material`]() color.
 
 <br/>
@@ -140,16 +140,16 @@ Will also affect the part's [`Material`]() color.
 ### Material
 > [`Enum.Material`](../datatypes/enumitem.md) \
 \
-Determines which `Material` type to apply when rendering the `part`.
+Determines which `Material` type to apply when rendering the `Part`.
 Currently this has no effect other than visual.
 
 <br/>
 
 
 ### Name
-> `String` \
+> `string` \
 \
-The name of the `part`, and its label in the explorer.
+The name of the `Part`, and its label in the explorer.
 
 <br/>
 
@@ -157,7 +157,7 @@ The name of the `part`, and its label in the explorer.
 ### Orientation
 > [`Vector3`](../datatypes/vector3.md) \
 \
-The rotation of the `part` in degrees along each axis.
+The rotation of the `Part` in degrees along each axis.
 
 <br/>
 
@@ -165,7 +165,7 @@ The rotation of the `part` in degrees along each axis.
 ### Parent
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-The containing `Instance` of the `part`, or `nil` when it has no parent.
+The containing `Instance` of the `Part`, or `nil` when it has no parent.
 
 <br/>
 
@@ -173,7 +173,7 @@ The containing `Instance` of the `part`, or `nil` when it has no parent.
 ### Position
 > [`Vector3`](../datatypes/vector3.md) \
 \
-The position of the `part`, in World-space.
+The position of the `Part`, in World-space.
 
 <br/>
 
@@ -181,7 +181,7 @@ The position of the `part`, in World-space.
 ### Rotation
 > [`Vector3`](../datatypes/vector3.md) \
 \
-The rotation of the `part` along each axis.
+The rotation of the `Part` along each axis.
 
 <br/>
 
@@ -189,7 +189,7 @@ The rotation of the `part` along each axis.
 ### Size
 > [`Vector3`](../datatypes/vector3.md) \
 \
-The size of the `part` in each dimension (width, height, depth).
+The size of the `Part` in each dimension (width, height, depth).
 
 <br/>
 
@@ -215,7 +215,7 @@ If a `part` is a truss part, then the `Player` is able to climb the part by walk
 ### Clone()
 > `Part` \
 \
-Creates and returns a copy of the `part`.
+Creates and returns a copy of the `Part`.
 
 <br/>
 
@@ -223,7 +223,7 @@ Creates and returns a copy of the `part`.
 ### Destroy()
 > `nil` \
 \
-Destroys the `part`.
+Destroys the `Part`.
 
 <br/>
 
@@ -231,7 +231,7 @@ Destroys the `part`.
 ### FindFirstChild()
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-`part:FindFirstChild(name: String)` \
+`part:FindFirstChild(name: string)` \
 \
 Returns the first direct child with the supplied `name`, or `nil` when none is
 found.
@@ -242,7 +242,7 @@ found.
 ### FindFirstChildOfClass()
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-`part:FindFirstChildOfClass(className: String)` \
+`part:FindFirstChildOfClass(className: string)` \
 \
 Returns the first direct child whose class matches `className`, or `nil` when
 none is found.
@@ -253,7 +253,7 @@ none is found.
 ### GetAttribute()
 > `Variant` | `nil` \
 \
-`part:GetAttribute(name: String)` \
+`part:GetAttribute(name: string)` \
 \
 Returns the value stored under the supplied attribute `name`.
 
@@ -263,7 +263,7 @@ Returns the value stored under the supplied attribute `name`.
 ### GetAttributeChangedSignal()
 > [`Signal`](/content/reference/datatypes/signal.md) \
 \
-`part:GetAttributeChangedSignal(name: String)` \
+`part:GetAttributeChangedSignal(name: string)` \
 \
 Returns an event associated with changes to the supplied attribute `name`.
 
@@ -271,9 +271,9 @@ Returns an event associated with changes to the supplied attribute `name`.
 
 
 ### GetAttributes()
-> `{ [String]: Variant }` \
+> `{ [string]: Variant }` \
 \
-Returns a table containing the `part` attributes.
+Returns a table containing the `Part` attributes.
 
 <br/>
 
@@ -281,7 +281,7 @@ Returns a table containing the `part` attributes.
 ### GetChildren()
 > `{ Instance }` \
 \
-Returns the direct children of the `part`.
+Returns the direct children of the `Part`.
 
 <br/>
 
@@ -289,7 +289,7 @@ Returns the direct children of the `part`.
 ### GetDescendants()
 > `{ Instance }` \
 \
-Returns the descendants of the `part`.
+Returns the descendants of the `Part`.
 
 <br/>
 
@@ -297,7 +297,7 @@ Returns the descendants of the `part`.
 ### GetPropertyChangedSignal()
 > [`Signal`](/content/reference/datatypes/signal.md) \
 \
-`part:GetPropertyChangedSignal(property: String)` \
+`part:GetPropertyChangedSignal(property: string)` \
 \
 Returns an event associated with changes to the supplied property.
 
@@ -307,7 +307,7 @@ Returns an event associated with changes to the supplied property.
 ### IsA()
 > `Boolean` \
 \
-`part:IsA(className: String)` \
+`part:IsA(className: string)` \
 \
 Returns whether the `part` is an instance of `className` or one of its
 ancestor classes.
@@ -318,7 +318,7 @@ ancestor classes.
 ### SetAttribute()
 > `nil` \
 \
-`part:SetAttribute(name: String, value: Variant | nil)` \
+`part:SetAttribute(name: string, value: Variant | nil)` \
 \
 Sets the attribute `name` to `value`. Passing `nil` clears the attribute.
 
@@ -328,7 +328,7 @@ Sets the attribute `name` to `value`. Passing `nil` clears the attribute.
 ### WaitForChild()
 > [`Instance`](/content/reference/classes/instance.md) \
 \
-`part:WaitForChild(name: String)` \
+`part:WaitForChild(name: string)` \
 \
 Waits for and returns a direct child with the supplied `name`.
 

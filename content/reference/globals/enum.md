@@ -56,7 +56,7 @@ Each enum group, such as `Enum.KeyCode`, exposes these lookup methods.
 
 > [`EnumItem`](/content/reference/datatypes/enumitem.md) | `nil`
 >
-> `enumType:FromName(name: String)`
+> `enumType:FromName(name: string)`
 >
 > Returns the item with the given name, or `nil` when the name is not part of
 > the enum group.

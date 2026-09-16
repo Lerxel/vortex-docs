@@ -14,8 +14,8 @@ properties synced from the server.
 Properties of `ReplicatedStorage`.
 <br><br>
 
-- [ClassName](#classname): `String`
-- [Name](#name): `String`
+- [ClassName](#classname): `string`
+- [Name](#name): `string`
 
 </details>
 
@@ -45,7 +45,7 @@ part.Parent = ReplicatedStorage
 ## Properties
 
 ### ClassName
-> `String` \
+> `string` \
 \
 The runtime class name of the service.
 
@@ -53,7 +53,7 @@ The runtime class name of the service.
 
 
 ### Name
-> `String` \
+> `string` \
 \
 The service name shown by the runtime.
 
@@ -64,14 +64,14 @@ The service name shown by the runtime.
 ### FindFirstChild()
 > [`Instance`](/content/reference/classes/instance.md) | `nil` \
 \
-`ReplicatedStorage:FindFirstChild(name: String)` \
+`ReplicatedStorage:FindFirstChild(name: string)` \
 \
 Returns the first direct child with the supplied `name`, or `nil` when none is
 found.
 
 #### Parameters
 
-- `name`: `String` — the child name to find.
+- `name`: `string` — the child name to find.
 
 <br/>
 
@@ -87,13 +87,13 @@ Returns the direct children of `ReplicatedStorage`.
 ### WaitForChild()
 > [`Instance`](/content/reference/classes/instance.md) \
 \
-`ReplicatedStorage:WaitForChild(name: String)` \
+`ReplicatedStorage:WaitForChild(name: string)` \
 \
 Waits for and returns a direct child with the supplied `name`.
 
 #### Parameters
 
-- `name`: `String` — the child name to wait for.
+- `name`: `string` — the child name to wait for.
 
 <br/>
 

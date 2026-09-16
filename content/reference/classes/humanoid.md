@@ -17,8 +17,8 @@ The character's root transform is exposed separately as a
 Properties of a `Humanoid`.
 <br><br>
 
-* [ClassName](#classname): `String`
-* [Name](#name): `String`
+* [ClassName](#classname): `string`
+* [Name](#name): `string`
 * [Health](#health): `Number`
 * [MaxHealth](#maxhealth): `Number`
 
@@ -52,7 +52,7 @@ Signals of a `Humanoid`.
 
 ### ClassName
 
-> `String`
+> `string`
 >
 > The Humanoid class name, `"Humanoid"`.
 
@@ -60,7 +60,7 @@ Signals of a `Humanoid`.
 
 ### Name
 
-> `String`
+> `string`
 >
 > The Humanoid name.
 
