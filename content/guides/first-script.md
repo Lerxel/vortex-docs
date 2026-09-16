@@ -10,7 +10,7 @@ Revision 2
 Written by Kindtracker on August 29th, 2026
 -->
 
-Let's make a Hello world script, create a script in ServerScriptService.
+Let's make a Hello World script, create a script in ServerScriptService.
 You will see:
 ```lua
 print("Hello, world!")
