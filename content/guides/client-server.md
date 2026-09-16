@@ -5,7 +5,7 @@ description: Explains the client and server
 
 Vortex games operate with a client-server model.
 - Server: The server is the authoritative side that runs the actual game and is the source of the game's state.
-- Client: A client is a local copy of the game running on a player's device.
+- Client: A client is the player’s instance of the game running on their device.
 
 ## Server
 The server is the authoritative side of the game. It runs separately from the player’s device and is responsible for managing the actual state of the game, such as player data, game rules, damage, currency, and other state that needs to be trusted and synchronized between players.
@@ -21,14 +21,14 @@ Client-side code runs in [LocalScripts](https://create.playvortex.io/reference/c
 
 Whenever handling `Client → Server` remotes, make sure to properly validate the data sent by the client. A good rule of thumb is to let the client signal intent, but do not let it make authoritative decisions about game state. E.g.:
   - Bad: Player clicks a buy button. On their client, they subtract their own money, give themselves the item, then inform the server of the transaction that occurred.
-  - Good: Player clicks a buy button. The client informs the server of its intent. The server validates if player has enough money and, if they do, changes their money and gives them the item.
+  - Good: Player clicks a buy button. The client informs the server of its intent. The server validates whether the player has enough money and, if they do, changes their money and gives them the item.
 
 ## Vortex Studio 0.3.4 notes
 
 Client-to-server intent is currently the confirmed remote direction, but the
-server receives a numeric connection id rather than a `Player` object. A server
+server receives a numeric connection ID rather than a `Player` object. A server
 Script can enumerate active Players through `Players:GetPlayers()` and read
-their Characters, but there is no known public way to map that sender id to one
+their Characters, but there is no known public way to map that sender ID to one
 of those Players. Server logic can process an allowed request, but cannot yet
 reliably use the normal Roblox `player.Character` targeting pattern for the
 specific caller.
