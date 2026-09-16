@@ -4,7 +4,7 @@ description: Explains the client and server
 ---
 
 Vortex games operate with a client-server model.
-- Server: The server is the authoritative computer that runs the actual game and is the source of the game's state.
+- Server: The server is the authoritative side that runs the actual game and is the source of the game's state.
 - Client: A client is a local copy of the game running on a player's device.
 
 ## Server
@@ -20,7 +20,7 @@ Client-side code is run from [LocalScripts](https://create.playvortex.io/referen
 ---
 
 Whenever handling `Client → Server` remotes, make sure to properly validate the data given by the client. A general rule of thumb is to let the client signal intent, not make any decisions about actual state itself. E.g.:
-  - Bad: Player clicks a buy button. On their client, they subtract their own money, give themselves the item, the inform the server of the transaction that occurred.
+  - Bad: Player clicks a buy button. On their client, they subtract their own money, give themselves the item, then inform the server of the transaction that occurred.
   - Good: Player clicks a buy button. Client informs the server of its intent. Server validates if player has enough money and, if they do, changes their money and gives them the item.
 
 ## Vortex Studio 0.3.4 notes
