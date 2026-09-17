@@ -5,7 +5,7 @@ description: A primitive rectangular prism
 
 <!-- 
 Part
-Revision 1
+Revision 2
 
 Written by KingTasaz on August 28th, 2026
 -->
@@ -22,7 +22,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 
 - [Color](#color): [`Color3`](../datatypes/color3.md)
 - [Transparency](#transparency): `Float`
-- [Material](#material): [`Enum.Material`](../datatypes/enumitem.md) <!-- not sure if this should link to enumitem.md or enum.md -->
+- [Material](#material): [`Enum.Material`](../globals/enum.md) <!-- not sure if this should link to enumitem.md or enum.md <pretty sure it's enum.md> -->
 - [Cast Shadow](#cast-shadow): `Boolean`
 
 </details>
@@ -33,7 +33,7 @@ Properties of a Part, in the order they appear on Vortex Studio.
 - [Anchored](#anchored): `Boolean`
 - [CanCollide](#cancollide): `Boolean`
 - [ClassName](#classname): `string`
-- [Parent](#parent): [`Instance`](/content/reference/classes/instance.md) | `nil`
+- [Parent](#parent): [`Instance`](./instance.md) | `nil`
 - [Truss](#truss): `Boolean`
 
 </details>
@@ -59,17 +59,17 @@ Properties of a Part, in the order they appear on Vortex Studio.
 
 - [Clone](#clone): `Part`
 - [Destroy](#destroy): `nil`
-- [FindFirstChild](#findfirstchild): [`Instance`](/content/reference/classes/instance.md) | `nil`
-- [FindFirstChildOfClass](#findfirstchildofclass): [`Instance`](/content/reference/classes/instance.md) | `nil`
+- [FindFirstChild](#findfirstchild): [`Instance`](./instance.md) | `nil`
+- [FindFirstChildOfClass](#findfirstchildofclass): [`Instance`](./instance.md) | `nil`
 - [GetAttribute](#getattribute): `Variant` | `nil`
-- [GetAttributeChangedSignal](#getattributechangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
+- [GetAttributeChangedSignal](#getattributechangedsignal): [`Signal`](../datatypes/signal.md)
 - [GetAttributes](#getattributes): `{ [string]: Variant }`
 - [GetChildren](#getchildren): `{ Instance }`
 - [GetDescendants](#getdescendants): `{ Instance }`
-- [GetPropertyChangedSignal](#getpropertychangedsignal): [`Signal`](/content/reference/datatypes/signal.md)
+- [GetPropertyChangedSignal](#getpropertychangedsignal): [`Signal`](../datatypes/signal.md)
 - [IsA](#isa): `Boolean`
 - [SetAttribute](#setattribute): `nil`
-- [WaitForChild](#waitforchild): [`Instance`](/content/reference/classes/instance.md)
+- [WaitForChild](#waitforchild): [`Instance`](./instance.md)
 
 </details>
 
@@ -77,9 +77,9 @@ Properties of a Part, in the order they appear on Vortex Studio.
 <summary><b>Events</b></summary>
 <br>
 
-- [Changed](#changed): [`Signal`](/content/reference/datatypes/signal.md)
-- [Touched](#touched): [`Signal`](/content/reference/datatypes/signal.md)
-- [TouchEnded](#touchended): [`Signal`](/content/reference/datatypes/signal.md)
+- [Changed](#changed): [`Signal`](../datatypes/signal.md)
+- [Touched](#touched): [`Signal`](../datatypes/signal.md)
+- [TouchEnded](#touchended): [`Signal`](../datatypes/signal.md)
 </details>
 
 ## Properties
@@ -104,7 +104,7 @@ Determines whether the `Part` is given physics collisions, or whether it can pha
 
 
 ### CFrame
-> [`CFrame`](/content/reference/datatypes/cframe.md) \
+> [`CFrame`](../datatypes/cframe.md) \
 \
 Sets the position and rotation of the `Part` as a single transform.
 
@@ -163,7 +163,7 @@ The rotation of the `Part` in degrees along each axis.
 
 
 ### Parent
-> [`Instance`](/content/reference/classes/instance.md) | `nil` \
+> [`Instance`](./instance.md) | `nil` \
 \
 The containing `Instance` of the `Part`, or `nil` when it has no parent.
 
@@ -229,7 +229,7 @@ Destroys the `Part`.
 
 
 ### FindFirstChild()
-> [`Instance`](/content/reference/classes/instance.md) | `nil` \
+> [`Instance`](./instance.md) | `nil` \
 \
 `part:FindFirstChild(name: string)` \
 \
@@ -240,7 +240,7 @@ found.
 
 
 ### FindFirstChildOfClass()
-> [`Instance`](/content/reference/classes/instance.md) | `nil` \
+> [`Instance`](./instance.md) | `nil` \
 \
 `part:FindFirstChildOfClass(className: string)` \
 \
@@ -261,7 +261,7 @@ Returns the value stored under the supplied attribute `name`.
 
 
 ### GetAttributeChangedSignal()
-> [`Signal`](/content/reference/datatypes/signal.md) \
+> [`Signal`](../datatypes/signal.md) \
 \
 `part:GetAttributeChangedSignal(name: string)` \
 \
@@ -295,7 +295,7 @@ Returns the descendants of the `Part`.
 
 
 ### GetPropertyChangedSignal()
-> [`Signal`](/content/reference/datatypes/signal.md) \
+> [`Signal`](../datatypes/signal.md) \
 \
 `part:GetPropertyChangedSignal(property: string)` \
 \
