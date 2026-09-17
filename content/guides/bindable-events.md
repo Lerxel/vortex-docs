@@ -9,5 +9,5 @@ LocalScript. The counterpart required to emit an event,
 
 As a result, BindableEvents cannot currently be used for script-to-script
 messaging. Use a shared state mechanism or an authored
-[`RemoteEvent`](/content/reference/classes/remote-event.md) when the message
+[`RemoteEvent`](../reference/classes/remote-event.md) when the message
 must cross client/server contexts.
