@@ -6,7 +6,7 @@ description: A container that holds all players currently connected as Player ob
 ## Summary
 
 A service representing connected clients as
-[Player](https://create.playvortex.io/reference/classes/player/) instances.
+[Player](./player.md) instances.
 
 ### Example
 

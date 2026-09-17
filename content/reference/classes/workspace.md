@@ -26,9 +26,9 @@ Properties of a Workspace, in the order they appear on Vortex Studio
 Methods of a `Workspace`.
 <br><br>
 
-- [FindFirstChild](#findfirstchild): [`Instance`](/content/reference/classes/instance.md) | `nil`
+- [FindFirstChild](#findfirstchild): [`Instance`](./instance.md) | `nil`
 - [GetChildren](#getchildren): `{ Instance }`
-- [WaitForChild](#waitforchild): [`Instance`](/content/reference/classes/instance.md)
+- [WaitForChild](#waitforchild): [`Instance`](./instance.md)
 
 </details>
 
@@ -52,7 +52,7 @@ The service name shown by the runtime.
 ## Methods
 
 ### FindFirstChild()
-> [`Instance`](/content/reference/classes/instance.md) | `nil` \
+> [`Instance`](./instance.md) | `nil` \
 \
 `workspace:FindFirstChild(name: string)` \
 \
@@ -75,7 +75,7 @@ Returns the direct children of `Workspace`.
 
 
 ### WaitForChild()
-> [`Instance`](/content/reference/classes/instance.md) \
+> [`Instance`](./instance.md) \
 \
 `workspace:WaitForChild(name: string)` \
 \

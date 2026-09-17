@@ -326,7 +326,7 @@ Sets the attribute `name` to `value`. Passing `nil` clears the attribute.
 
 
 ### WaitForChild()
-> [`Instance`](/content/reference/classes/instance.md) \
+> [`Instance`](./instance.md) \
 \
 `part:WaitForChild(name: string)` \
 \
@@ -337,7 +337,7 @@ Waits for and returns a direct child with the supplied `name`.
 ## Events
 
 ### Changed
-> [`Signal`](/content/reference/datatypes/signal.md) \
+> [`Signal`](../datatypes/signal.md) \
 \
 An event associated with changes to the `part`.
 
@@ -345,7 +345,7 @@ An event associated with changes to the `part`.
 
 
 ### Touched
-> [`Signal`](/content/reference/datatypes/signal.md) \
+> [`Signal`](../datatypes/signal.md) \
 \
 An event associated with physical contact with the `part`.
 
@@ -353,7 +353,7 @@ An event associated with physical contact with the `part`.
 
 
 ### TouchEnded
-> [`Signal`](/content/reference/datatypes/signal.md) \
+> [`Signal`](../datatypes/signal.md) \
 \
 An event associated with the end of physical contact with the `part`.
 
