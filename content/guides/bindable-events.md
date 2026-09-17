@@ -3,7 +3,7 @@ title: Bindable Events
 description: Current BindableEvent support in Vortex Studio.
 ---
 
-`BindableEvent` can be created and exposes an Event table in both Scripts and LocalScripts.
+`BindableEvent` can be created and exposes an `Event` table in both Scripts and LocalScripts.
 However, the method required to emit an event,
 `BindableEvent:Fire(...)`, is not available in Vortex Studio 0.3.4.
 
