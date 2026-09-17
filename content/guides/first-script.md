@@ -32,7 +32,7 @@ part.Position = Vector3.new(0, 10, 0)
 part.Color = Color3.fromRGB(192, 32, 12)
 part.Anchored = false
 ```
-Playtest your game and you will see a red part named "MyPart" with a size of 2, 2, 2 and Anchored property set to false.
+Playtest your game and you will see a red part named "MyPart" with a size of `2, 2, 2` and Anchored property set to false.
 
 `workspace` is a built-in shortcut for the Workspace service. However, other services don't have built-in shortcuts, so you need to use `game:GetService(serviceName: string)` to access them.
 
