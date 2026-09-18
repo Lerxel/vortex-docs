@@ -35,3 +35,4 @@ part.Anchored = false
 Playtest your game and you will see a part named "MyPart" with a size of `2, 2, 2`, a red color, and not anchored.
 
 `workspace` is a built-in shortcut for the Workspace service. However, other services don't have built-in shortcuts, so you need to use `game:GetService(serviceName: string)` to access them.
+
