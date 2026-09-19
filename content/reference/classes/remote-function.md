@@ -5,7 +5,7 @@ description: A function that can be invoked between the server and client and re
 
 ## Summary
 
-Unlike [RemoteEvents](https://create.playvortex.io/reference/classes/remote-event/), `RemoteFunctions` allow data to be computed during a function call and return the computed values.
+Unlike [RemoteEvents](./remote-event.md), `RemoteFunctions` allow data to be computed during a function call and return the computed values.
 `InvokeAllClients` does not exist because waiting for every player to return a value cannot be guaranteed
 
 ### Example

@@ -11,7 +11,7 @@ description: An editor-authored server execution asset.
 
 `Source` is not settable. A runtime-created Script therefore cannot be given
 code and cannot become an executable server script. Assigning its `Parent` to
-[`ServerScriptService`](/content/reference/classes/server-script-service.md)
+[`ServerScriptService`](./server-script-service.md)
 does not establish an observable parent-child relationship with the service.
 
 Use an editor-authored Script to run server-side code. Within one, the global

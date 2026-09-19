@@ -9,7 +9,7 @@ A `RemoteEvent` can be used to communicate from the server to a client (or all c
 and vice versa.
 
 For additional information, see
-[RemoteFunction](https://create.playvortex.io/reference/classes/remote-function/).
+[RemoteFunction](./remote-function.md).
 
 ### Example
 
