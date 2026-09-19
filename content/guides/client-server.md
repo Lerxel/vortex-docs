@@ -10,12 +10,12 @@ Vortex games operate with a client-server model.
 ## Server
 The server is the authoritative side of the game. It runs separately from the player’s device and is responsible for managing the actual state of the game, such as player data, game rules, damage, currency, and other state that needs to be trusted and synchronized between players.
 
-Server-side code runs in [Scripts](https://create.playvortex.io/reference/classes/script/).
+Server-side code runs in [Scripts](../reference/classes/script.md).
 
 ## Client
 The client is the player’s side of the game. It runs on the player’s device and is responsible for things that the player directly sees and interacts with, such as rendering the world, displaying UI, playing animations, and receiving input from the player.
 
-Client-side code runs in [LocalScripts](https://create.playvortex.io/reference/classes/localscript/).
+Client-side code runs in [LocalScripts](../reference/classes/localscript.md).
 
 ---
 

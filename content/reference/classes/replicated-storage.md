@@ -24,9 +24,9 @@ Properties of `ReplicatedStorage`.
 Methods of `ReplicatedStorage`.
 <br><br>
 
-- [FindFirstChild](#findfirstchild): [`Instance`](/content/reference/classes/instance.md) | `nil`
+- [FindFirstChild](#findfirstchild): [`Instance`](./instance.md) | `nil`
 - [GetChildren](#getchildren): `{ Instance }`
-- [WaitForChild](#waitforchild): [`Instance`](/content/reference/classes/instance.md)
+- [WaitForChild](#waitforchild): [`Instance`](./instance.md)
 
 </details>
 
@@ -62,7 +62,7 @@ The service name shown by the runtime.
 ## Methods
 
 ### FindFirstChild()
-> [`Instance`](/content/reference/classes/instance.md) | `nil` \
+> [`Instance`](./instance.md) | `nil` \
 \
 `ReplicatedStorage:FindFirstChild(name: string)` \
 \
@@ -85,7 +85,7 @@ Returns the direct children of `ReplicatedStorage`.
 
 
 ### WaitForChild()
-> [`Instance`](/content/reference/classes/instance.md) \
+> [`Instance`](./instance.md) \
 \
 `ReplicatedStorage:WaitForChild(name: string)` \
 \

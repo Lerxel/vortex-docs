@@ -9,5 +9,5 @@ However, the method required to emit an event,
 
 As a result, BindableEvents cannot currently be used for communication between scripts.
 Use a shared state mechanism or an authored
-[`RemoteEvent`](/content/reference/classes/remote-event.md) 
+[`RemoteEvent`](../reference/classes/remote-event.md)
 when communication needs to cross the client-server boundary.

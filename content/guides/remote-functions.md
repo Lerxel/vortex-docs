@@ -5,7 +5,7 @@ description: Current RemoteFunction support and limitations in Vortex.
 
 ## Current support
 
-An editor-authored [`RemoteFunction`](/content/reference/classes/remote-function.md)
+An editor-authored [`RemoteFunction`](../reference/classes/remote-function.md)
 in `ReplicatedStorage` exposes `InvokeServer` to a LocalScript. A server Script
 can assign `OnServerInvoke`.
 
@@ -17,7 +17,7 @@ Studio 0.3.4.
 ## Practical guidance
 
 Do not use RemoteFunctions for critical gameplay paths yet. Prefer an
-editor-authored [`RemoteEvent`](/content/reference/classes/remote-event.md)
+editor-authored [`RemoteEvent`](../reference/classes/remote-event.md)
 with primitive payloads when one-way client-to-server communication is sufficient
 RemoteEvent delivery has been observed; the sender value received by the server
 is a numeric identifier, not a Player instance.
