@@ -54,7 +54,7 @@ Each enum group, such as `Enum.KeyCode`, exposes these lookup methods.
 
 ### FromName()
 
-> [`EnumItem`](/content/reference/datatypes/enumitem.md) | `nil`
+> [`EnumItem`](../datatypes/enumitem.md) | `nil`
 >
 > `enumType:FromName(name: string)`
 >
@@ -63,7 +63,7 @@ Each enum group, such as `Enum.KeyCode`, exposes these lookup methods.
 
 ### FromValue()
 
-> [`EnumItem`](/content/reference/datatypes/enumitem.md)
+> [`EnumItem`](../datatypes/enumitem.md)
 >
 > `enumType:FromValue(value: Number)`
 >
