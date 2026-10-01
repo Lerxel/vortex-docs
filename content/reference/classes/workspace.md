@@ -4,10 +4,10 @@ description: A service that holds and renders every 3D instance that players can
 ---
 
 <!-- 
-Instance
-Revision 1.1
+Workspace
+Revision 1.2
 
-Written by TheJustDare on August 31st, 2026
+Written by Kindtracker on September 19, 2026
 -->
 
 ## Summary
@@ -28,6 +28,7 @@ Methods of `Workspace`.
 
 - [FindFirstChild](#findfirstchild): [`Instance`](./instance.md) | `nil`
 - [GetChildren](#getchildren): `{ Instance }`
+- [Raycast](#raycast): [`RaycastResult`](../datatypes/raycast-result.md) | `nil`
 - [WaitForChild](#waitforchild): [`Instance`](./instance.md)
 
 </details>
@@ -74,6 +75,22 @@ Returns the direct children of `Workspace`.
 <br/>
 
 
+### Raycast()
+> `RaycastResult | nil` 
+\
+`Workspace:Raycast(origin: Vector3, direction: Vector3, raycastParams: RaycastParams | nil)`
+\
+Casts a ray from the specified origin in the specified direction. The function returns a [RaycastResult](../datatypes/raycast-result.md) if an eligible object intersects the ray, or `nil` if no object is hit.
+
+#### Parameters
+
+- `origin`: `Vector3` — The origin point of the ray.
+- `direction`: `Vector3` — The directional vector of the ray.
+- `raycastParams`: An optional object used to specify hit eligibility during the raycast operation.
+
+<br/>
+
+
 ### WaitForChild()
 > [`Instance`](./instance.md) \
 \
@@ -93,7 +110,6 @@ Waits for and returns a direct child with the supplied `name`.
 The hierarchy observations below were revalidated in Vortex Studio 0.3.4 and
 may differ in later releases.
 
-`Raycast` is not exposed in either Script or LocalScript context in Vortex Studio
 0.3.4. A temporary `Part` can be parented to `Workspace`,
 and `WaitForChild` resolves it. `FindFirstChild` returns `nil` and
 `GetChildren` omits it.
