@@ -65,7 +65,7 @@ loading delay, that wrapper can expose a separate `Scene` property containing
 the rendered armature, body meshes, limbs, and avatar-specific attachments.
 It is a transient renderer projection rather than part of the normal Character hierarchy.
 
-Once that visual Scene is available, the observed direct-member path is::
+Once that visual Scene is available, the observed direct-member path is:
 
 ```luau
 local wrapper = character:GetChildren()[1]
