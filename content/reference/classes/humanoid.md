@@ -178,7 +178,7 @@ tested server-visible Humanoid projection, so their write behavior remains
 unknown. `Died` and `HealthChanged` are exposed Signal references; their
 delivery remains unconfirmed.
 
-TThe confirmed server-side API exposes only `IsDead()`. The Roblox-style
+The confirmed server-side API exposes only `IsDead()`. The Roblox-style
 `TakeDamage` method, along with state/movement control, animation, and accessory methods
 all read as `nil`. Of the tested Roblox-style signals, only `Died` and
 `HealthChanged` are connectable; `Jumping`, `FreeFalling`, `Running`,
